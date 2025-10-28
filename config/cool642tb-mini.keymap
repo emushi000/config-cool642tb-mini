@@ -489,20 +489,20 @@
 
             layer_1 {
                 bindings = <
-                            &moComAnd  &mo7   &mo8                &mo9                     &kp JP_LBRACKET                                &kp JP_RBRACKET  &moPgTabUp  &kp UP    &moPgTabDown  &kp HOME
-                            &moDotPlu  &mo4   &mo5                &mo6                     &moLPalDol              &trans       &trans    &moRPalF15       &kp LEFT    &kp DOWN  &kp RIGHT     &kp END
-                            &mo0       &mo1   &mo2                &mo3                     &moAtHas                &trans       &trans    &moBqF16         &moDquSqu   &moUnTil  &moF14Ex      &moAppQu
-                            &trans     &none  &mt LGUI LG(LS(T))  &mt LS(LCTRL) LG(LS(S))  &mt LSHIFT  tdIme       &kp LG(V)    &trans    &kp LG(H)                                            &moBslSp
+                            &moComAnd  &mo7   &mo8                      &mo9                     &kp JP_LBRACKET                                &kp JP_RBRACKET  &moPgTabUp  &kp UP    &moPgTabDown  &kp HOME
+                            &moDotPlu  &mo4   &mo5                      &mo6                     &moLPalDol              &trans       &trans    &moRPalF15       &kp LEFT    &kp DOWN  &kp RIGHT     &kp END
+                            &mo0       &mo1   &mo2                      &mo3                     &moAtHas                &trans       &trans    &moBqF16         &moDquSqu   &moUnTil  &moF14Ex      &moAppQu
+                            &trans     &none  &mt LGUI LGUI(LG(LS(T)))  &mt LS(LCTRL) LG(LS(S))  &mt LSHIFT tdIme        &kp LG(V)    &trans    &kp LG(H)                                            &moBslSp
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };
 
             layer_2 {
                 bindings = <
-                            &kp F12  &kp F7  &kp F8              &kp F9                   &kp F23                                         &bt BT_CLR         &maCScrlUp         &msc SCRL_UP    &maCScrlDown     &none
-                            &kp F11  &kp F4  &kp F5              &kp F6                   &kp F24           &trans         &trans         &bt BT_CLR_ALL     &msc SCRL_LEFT     &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
-                            &kp F10  &kp F1  &kp F2              &kp F3                   &trans            &trans         &trans         &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
-                            &trans   &none   &mt LGUI LG(LS(R))  &mt LS(LCTRL) LG(LS(R))  &mt LSHIFT LANG2  &kp LG(LS(V))  &kp LG(LC(T))  &trans             &kp LG(LS(SPACE))                                   &trans
+                            &kp F12  &kp F7  &kp F8                    &kp F9                   &kp F23                                         &bt BT_CLR         &maCScrlUp         &msc SCRL_UP    &maCScrlDown     &none
+                            &kp F11  &kp F4  &kp F5                    &kp F6                   &kp F24           &trans         &trans         &bt BT_CLR_ALL     &msc SCRL_LEFT     &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
+                            &kp F10  &kp F1  &kp F2                    &kp F3                   &trans            &trans         &trans         &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
+                            &trans   &none   &mt LGUI LGUI(LG(LS(R)))  &mt LS(LCTRL) LG(LS(R))  &mt LSHIFT LANG2  &kp LG(LS(V))  &kp LG(LC(T))  &trans             &kp LG(LS(SPACE))                                   &trans
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };

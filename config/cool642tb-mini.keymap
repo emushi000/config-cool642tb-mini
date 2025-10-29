@@ -489,10 +489,10 @@
 
             layer_1 {
                 bindings = <
-                            &moComAnd  &mo7   &mo8                    &mo9                     &kp JP_LBRACKET                                       &kp JP_RBRACKET  &moPgTabUp  &kp UP    &moPgTabDown  &kp HOME
-                            &moDotPlu  &mo4   &mo5                    &mo6                     &moLPalDol             &trans              &trans    &moRPalF15       &kp LEFT    &kp DOWN  &kp RIGHT     &kp END
-                            &mo0       &mo1   &mo2                    &mo3                     &moAtHas               &trans              &trans    &moBqF16         &moDquSqu   &moUnTil  &moF14Ex      &moAppQu
-                            &trans     &none  &mt LGUI LG(LG(LS(T)))  &mt LS(LCTRL) LG(LS(S))  &mt LCTRL LANG1        &mt LSHIFT LG(V)    &trans    &kp LG(H)                                            &moBslSp
+                            &moComAnd  &mo7   &mo8                    &mo9                     &kp JP_LBRACKET                                       &kp JP_RBRACKET  &kp HOME  &kp UP    &kp END    &moPgTabUp
+                            &moDotPlu  &mo4   &mo5                    &mo6                     &moLPalDol             &trans              &trans    &moRPalF15       &kp LEFT   &kp DOWN  &kp RIGHT  &moPgTabDown
+                            &mo0       &mo1   &mo2                    &mo3                     &moAtHas               &trans              &trans    &moBqF16         &moDquSqu  &moUnTil  &moF14Ex   &moAppQu
+                            &trans     &none  &mt LGUI LG(LG(LS(T)))  &mt LS(LCTRL) LG(LS(S))  &mt LCTRL LANG1        &mt LSHIFT LG(V)    &trans    &kp LG(H)                                        &moBslSp
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };

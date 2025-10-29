@@ -425,7 +425,7 @@
         moDquSqu: moDquSqu {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
+            bindings = <&kp JP_DQUOTE>, <&kp JP_QUOTE>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

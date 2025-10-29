@@ -398,63 +398,63 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_LPAREN>, <&kp JP_DOLLAR>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moRPalF15: moRPalF15 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_RPAREN>, <&kp F15>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moAtHas: moAtHas {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_AT>, <&kp JP_HASH>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moBqF16: moBqF16 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_BACKQUOTE>, <&kp F16>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moDquSqu: moDquSqu {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOUBLE_QUOTES>, <&kp SINGLE_QUOTE>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moUnTil: moUnTil {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_UNSCO>, <&kp JP_TILDE>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moF14Ex: moF14Ex {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp F14>, <&kp JP_EXCL>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moAppQu: moAppQu {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp K_APP>, <&kp JP_QUESTION>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moBslSp: moBslSp {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_BSLH>, <&kp LS(SPACE)>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         tdAlts: tap_alts {

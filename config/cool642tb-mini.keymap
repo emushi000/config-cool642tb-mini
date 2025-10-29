@@ -502,7 +502,7 @@
                             &kp F12  &kp F7  &kp F8                  &kp F9                   &kp F23                                                &bt BT_CLR         &maCScrlUp         &msc SCRL_UP    &maCScrlDown     &none
                             &kp F11  &kp F4  &kp F5                  &kp F6                   &kp F24           &trans                &trans         &bt BT_CLR_ALL     &msc SCRL_LEFT     &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans
                             &kp F10  &kp F1  &kp F2                  &kp F3                   &trans            &trans                &trans         &bt BT_SEL 0       &bt BT_SEL 1       &bt BT_SEL 2    &bt BT_SEL 3     &bt BT_SEL 4
-                            &trans   &none   &mt LGUI LG(LG(LS(R)))  &mt LS(LCTRL) LG(LS(R))  &mt LCTRL LANG2   &mt LSHIFT LG(LS(V))  &kp LG(LC(T))  &trans             &kp LG(LS(SPACE))                                   &trans
+                            &trans   &none   &mt LGUI LG(LG(LS(R)))  &mt LS(LCTRL) LG(LS(R))  &mt LCTRL LANG2   &mt LSHIFT LG(LS(V))  &kp LG(LC(T))  &trans             &kp LG(LA(SPACE))                                   &trans
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };

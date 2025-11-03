@@ -537,11 +537,11 @@
                 // F18:window resize
                 // F23:AhkReload
                 // F24:AhkShowKeyList
-                        //  RowL1    RowL2   RowL3     RowL4          RowL5      RowM1       RowM2         RowR1           RowR2           RowR3             RowR4             RowR5
-                            &kp F12  &kp F7  &kp F8    &kp F9         &kp F23                              &bt BT_CLR      &moZoomMonLeft  &msc moSCUpF17    &moOutMonRight    &none
-                            &kp F11  &kp F4  &kp F5    &kp F6         &kp F24    &trans      &trans        &bt BT_CLR_ALL  &moSCLeftWLeft  &msc moSCDownF18  &moSCRightWRight  &none
-                            &kp F10  &kp F1  &kp F2    &kp F3         &none      &trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3      &bt BT_SEL 4      &trans
-                            &trans   &none   &kp LGUI  &kp LS(LCTRL)  &kp LCTRL  &kp LSHIFT  &none         &none           &none                                               &none
+                        //  RowL1    RowL2   RowL3     RowL4          RowL5      RowM1       RowM2         RowR1           RowR2           RowR3         RowR4             RowR5
+                            &kp F12  &kp F7  &kp F8    &kp F9         &kp F23                              &bt BT_CLR      &moZoomMonLeft  &moSCUpF17    &moOutMonRight    &none
+                            &kp F11  &kp F4  &kp F5    &kp F6         &kp F24    &trans      &trans        &bt BT_CLR_ALL  &moSCLeftWLeft  &moSCDownF18  &moSCRightWRight  &none
+                            &kp F10  &kp F1  &kp F2    &kp F3         &none      &trans      &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3  &bt BT_SEL 4      &trans
+                            &trans   &none   &kp LGUI  &kp LS(LCTRL)  &kp LCTRL  &kp LSHIFT  &none         &none           &none                                           &none
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };

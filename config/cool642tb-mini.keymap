@@ -509,7 +509,7 @@
                 // F14:Date
                 bindings = <
                         //  RowL1            RowL2  RowL3              RowL4    RowL5         RowM1                RowM2     RowR1          RowR2          RowR3      RowR4            RowR5
-                            &kp COMMA        &mo7   &mo8               &mo9     &none                                        &none          &kp moPgTabUp  &kp UP     &kp moPgTabDown  &kp LS(SPACE)
+                            &kp COMMA        &mo7   &mo8               &mo9     &none                                        &none          &moPgTabUp  &kp UP     &moPgTabDown  &kp LS(SPACE)
                             &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2        &trans               &trans    &none          &kp LEFT       &kp DOWN   &kp RIGHT        &none
                             &mo0             &mo1   &mo2               &mo3     &kp F14       &trans               &trans    &none          &kp HOME       &kp K_APP  &kp END          &none
                             &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme  &mt LSHIFT WIN_CLIP  &trans    &kp WIN_VOICE                                             &none

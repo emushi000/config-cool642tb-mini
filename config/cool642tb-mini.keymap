@@ -398,7 +398,7 @@
         moSCDownF18: mo_scroll_down_F18 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&kp F18>;
+            bindings = <&msc SCRL_DOWN>, <&kp F18>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

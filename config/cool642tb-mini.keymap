@@ -423,7 +423,7 @@
         moEqCal: mo_equal_cal {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp JP_EQUAL>, <&kp maSendCal>;
+            bindings = <&kp JP_EQUAL>, <&maSendCal>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

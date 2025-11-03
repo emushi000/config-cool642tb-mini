@@ -458,14 +458,14 @@
         moZoomMonLeft: mo_zoom_monitor_left {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&macro_ctrl_scroll_up>, <&kp LG(LS(LEFT))>;
+            bindings = <&maCScrlUp>, <&kp LG(LS(LEFT))>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         moOutMonRight: mo_out_monitor_right {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&macro_ctrl_scroll_down>, <&kp LG(LS(RIGHT))>;
+            bindings = <&maCScrlDown>, <&kp LG(LS(RIGHT))>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

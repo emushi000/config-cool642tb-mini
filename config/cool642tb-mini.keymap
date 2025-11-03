@@ -49,7 +49,7 @@
 #define WIN_PASTE       LG(LS(V))         // advanced paste(power toys)
 #define WIN_TOP         LG(LC(T))         // always window top(power toys)
 #define WIN_TRIM        LG(LC(LS(T)))     // window trim(power toys)
-#define WIN_TRIM_R      LG(L(LS(R)))     // window live trim(power toys)
+#define WIN_TRIM_R      LG(LC(LS(R)))     // window live trim(power toys)
 
 
 &mt {

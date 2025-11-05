@@ -477,7 +477,7 @@
                             &kp Q     &kp W      &kp E     &kp R    &kp T                                            &kp Y      &kp U  &kp I      &kp O     &kp P
                             &kp A     &kp S      &kp D     &kp F    &kp G           &msc MB3            &none        &kp H      &kp J  &kp K      &kp L     &moL2Colon
                             &kp Z     &kp X      &kp C     &kp V    &kp B           &none               &none        &kp N      &kp M  &moComTil  &moDotEx  &lt 3 SLASH
-                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE    &lt 1 ENTER  &lt 2 F13                              &kp JP_BSLH
+                            &kp LALT  &lt 3 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE    &lt 1 ENTER  &lt 2 F13                              &kp JP_BSLH
                 >;
                 sensor-bindings =
                     <&scroll_up_down>,
@@ -490,11 +490,11 @@
                 // F20:Explorer
                 // F21:Mail
                 bindings = <
-                        //  RowL1            RowL2  RowL3              RowL4    RowL5          RowM1                RowM2       RowR1          RowR2          RowR3      RowR4      RowR5
-                            &kp COMMA        &mo7   &mo8               &mo9     &kp LS(LC(N))                                   &kp F21        &moPgTabUp  &kp UP     &moPgTabDown  &kp LC(SPACE)
-                            &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2         &kp C_MUTE           &kp C_PP    &kp F20        &kp LEFT       &kp DOWN   &kp RIGHT  &kp LS(SPACE)
-                            &kp N0           &mo1   &mo2               &mo3     &kp F14        &kp C_PREVIOUS       &kp C_NEXT  &kp F19        &kp HOME       &kp K_APP  &kp END    &none
-                            &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme   &mt LSHIFT WIN_CLIP  &trans      &kp WIN_VOICE                                       &none
+                        //  RowL1            RowL2  RowL3              RowL4    RowL5          RowM1                RowM2       RowR1          RowR2          RowR3      RowR4         RowR5
+                            &kp COMMA        &mo7   &mo8               &mo9     &kp LS(LC(N))                                   &kp F21        &moPgTabUp     &kp UP     &moPgTabDown  &kp LC(SPACE)
+                            &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2         &kp C_MUTE           &kp C_PP    &kp F20        &kp LEFT       &kp DOWN   &kp RIGHT     &kp LS(SPACE)
+                            &kp N0           &mo1   &mo2               &mo3     &kp F14        &kp C_PREVIOUS       &kp C_NEXT  &kp F19        &kp HOME       &kp K_APP  &kp END       &none
+                            &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme   &mt LSHIFT WIN_CLIP  &trans      &kp WIN_VOICE                                          &none
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };

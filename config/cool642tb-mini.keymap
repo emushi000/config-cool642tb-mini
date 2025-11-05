@@ -461,12 +461,6 @@
             bindings = <&mt LCTRL LANG1>, <&kp LANG2>;
         };
 
-        rot_kp: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&kp>, <&kp>;
-        };
-
          keymap {
             compatible = "zmk,keymap";
 
@@ -539,7 +533,7 @@
                             &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &none  &none  &none    &none  &none  &none  &none  &none
                             &none           &trans        &none          &none         &none  &none  &none    &none  &none                &none
                 >;
-                sensor-bindings = <&scroll_up_down>;
+                sensor-bindings = <&none>;
             };
         };
     };

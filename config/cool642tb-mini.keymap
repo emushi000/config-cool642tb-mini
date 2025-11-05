@@ -510,7 +510,7 @@
                             &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &kp JP_DOLLAR      &none                 &none         &kp JP_YEN     &kp JP_TILDE  &kp JP_EXCL      &kp JP_QUESTION   &kp KP_SLASH
                             &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &kp WIN_CMDP  &trans                                                          &kp JP_BSLH
                 >;
-                sensor-bindings = <&none>;
+                sensor-bindings = <&scroll_up_down>;
             };
 
             layer_3 {
@@ -537,7 +537,7 @@
                             &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &none  &none  &none    &none  &none  &none  &none  &none
                             &none           &trans        &none          &none         &none  &none  &none    &none  &none                &none
                 >;
-                sensor-bindings = <&none>;
+                sensor-bindings = <&scroll_up_down>;
             };
 
         };

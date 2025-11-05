@@ -336,19 +336,17 @@
             tap-ms = <20>;
         };
 
-//        volume_up_down: behavior_sensor_rotate_volume_up_down {
-//            compatible = "zmk,behavior-sensor-rotate";
-//            #sensor-binding-cells = <0>;
-//            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
-//            tap-ms = <20>;
-//        };
-//
-//        bri_up_down: behavior_sensor_rotate_brightness_up_down {
-//            compatible = "zmk,behavior-sensor-rotate";
-//            #sensor-binding-cells = <0>;
-//            bindings = <&kp C_BRI_INC>, <&kp C_BRI_DEC>;
-//            tap-ms = <20>;
-//        };
+        volume_up_down: behavior_sensor_rotate_volume_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_VOLUME_UP>, <&kp C_VOLUME_DOWN>;
+        };
+
+        bri_up_down: behavior_sensor_rotate_brightness_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp C_BRI_INC>, <&kp C_BRI_DEC>;
+        };
 
         // new behavior
         moL2Colon: mo_layer2_colons {

@@ -461,6 +461,12 @@
             bindings = <&mt LCTRL LANG1>, <&kp LANG2>;
         };
 
+        rot_kp: sensor_rotate_kp {
+            compatible = "zmk,behavior-sensor-rotate-var";
+            #sensor-binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+        };
+
          keymap {
             compatible = "zmk,keymap";
 
@@ -493,7 +499,7 @@
                             &kp N0           &mo1   &mo2               &mo3     &kp F14        &kp C_PREVIOUS       &kp C_NEXT  &kp F19        &kp HOME       &kp K_APP  &kp END       &none
                             &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme   &mt LSHIFT WIN_CLIP  &trans      &kp WIN_VOICE                                          &none
                 >;
-                sensor-bindings = <&scroll_up_down>;
+                sensor-bindings = <&volume_up_down>;
             };
 
             layer_2 {
@@ -522,7 +528,7 @@
                             &kp F10  &kp F1  &kp F2    &kp F3         &kp F22    &none       &none  &none  &none             &none    &none              &trans
                             &trans   &none   &kp LGUI  &kp LS(LCTRL)  &kp LCTRL  &kp LSHIFT  &none  &none  &none                                         &none
                 >;
-                sensor-bindings = <&scroll_up_down>;
+                sensor-bindings = <&bri_up_down>;
             };
 
             layer_4 {

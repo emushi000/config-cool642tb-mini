@@ -362,7 +362,7 @@
         moPgTabUp: mo_pageup_tab {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PAGE_UP>, <&kp LC(LC(TAB))>;
+            bindings = <&kp PAGE_UP>, <&kp LC(LS(TAB))>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

@@ -170,7 +170,7 @@
             };
 
             coMB6 {
-                bindings = <&kp LG(UP)>;
+                bindings = <&kp LA(UP)>;
                 key-positions = <30 32>;
                 layers = <0>;
             };
@@ -478,11 +478,11 @@
                 // F20:Explorer
                 // F21:Mail
                 bindings = <
-                        //  RowL1            RowL2  RowL3              RowL4    RowL5         RowM1                RowM2     RowR1          RowR2          RowR3      RowR4      RowR5
-                            &kp COMMA        &mo7   &mo8               &mo9     &kp F6                                       &kp F21        &moPgTabUp  &kp UP     &moPgTabDown  &kp LC(SPACE)
-                            &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2        &trans               &trans    &kp F20        &kp LEFT       &kp DOWN   &kp RIGHT  &kp LS(SPACE)
-                            &kp N0           &mo1   &mo2               &mo3     &kp F14       &trans               &trans    &kp F19        &kp HOME       &kp K_APP  &kp END    &none
-                            &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme  &mt LSHIFT WIN_CLIP  &trans    &kp WIN_VOICE                                       &none
+                        //  RowL1            RowL2  RowL3              RowL4    RowL5          RowM1                RowM2     RowR1          RowR2          RowR3      RowR4      RowR5
+                            &kp COMMA        &mo7   &mo8               &mo9     &kp LS(LC(N))                                        &kp F21        &moPgTabUp  &kp UP     &moPgTabDown  &kp LC(SPACE)
+                            &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2         &trans               &trans    &kp F20        &kp LEFT       &kp DOWN   &kp RIGHT  &kp LS(SPACE)
+                            &kp N0           &mo1   &mo2               &mo3     &kp F14        &trans               &trans    &kp F19        &kp HOME       &kp K_APP  &kp END    &none
+                            &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme   &mt LSHIFT WIN_CLIP  &trans    &kp WIN_VOICE                                       &none
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };

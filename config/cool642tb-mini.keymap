@@ -451,7 +451,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <500>;
-            bindings = <&kp LS(LCTRL)>, <&kp LS(LALT)>, <&kp LC(LALT)>;
+            bindings = <&kp LS(LCTRL)>, <&kp LC(LALT)>, <&kp LS(LALT)>;
         };
 
         tdCtrlTdIme: tap_ctrl_td_ime {
@@ -517,9 +517,9 @@
                 // F23:AhkReload
                 // F24:AhkShowKeyList
                         //  RowL1    RowL2   RowL3     RowL4          RowL5      RowM1       RowM2  RowR1  RowR2             RowR3    RowR4              RowR5
-                            &kp F12  &kp F7  &kp F8    &kp F9         &kp F24                       &none  &kp LG(LS(LEFT))  &kp F17  &kp LG(LS(RIGHT))  &none
-                            &kp F11  &kp F4  &kp F5    &kp F6         &kp F23    &none       &none  &none  &kp LG(LEFT)      &kp F18  &kp LG(RIGHT)      &none
-                            &kp F10  &kp F1  &kp F2    &kp F3         &kp F22    &none       &none  &none  &none             &none    &none              &trans
+                            &kp F12  &kp F7  &kp F8    &kp F9         &none                         &none  &kp LG(LS(LEFT))  &kp F17  &kp LG(LS(RIGHT))  &none
+                            &kp F11  &kp F4  &kp F5    &kp F6         &none      &none       &none  &none  &kp LG(LEFT)      &kp F18  &kp LG(RIGHT)      &none
+                            &kp F10  &kp F1  &kp F2    &kp F3         &none      &none       &none  &none  &none             &none    &none              &trans
                             &trans   &none   &kp LGUI  &kp LS(LCTRL)  &kp LCTRL  &kp LSHIFT  &none  &none  &none                                         &none
                 >;
                 sensor-bindings = <&bri_up_down>;
@@ -527,14 +527,15 @@
 
             layer_4 {
                 bindings = <
-                        //  RowL1           RowL2         RowL3          RowL4         RowL5  RowM1  RowM2    RowR1  RowR2  RowR3  RowR4  RowR5
-                            &bt BT_CLR_ALL  &none         &none          &none         &none                  &none  &none  &none  &none  &none
-                            &bt BT_CLR      &bt BT_SEL 4  &none          &none         &none  &none  &none    &none  &none  &none  &none  &none
-                            &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &none  &none  &none    &none  &none  &none  &none  &none
-                            &none           &trans        &none          &none         &none  &none  &none    &none  &none                &none
+                        //  RowL1           RowL2         RowL3          RowL4         RowL5    RowM1  RowM2    RowR1  RowR2  RowR3  RowR4  RowR5
+                            &bt BT_CLR_ALL  &none         &none          &none         &kp F24                  &none  &none  &none  &none  &none
+                            &bt BT_CLR      &bt BT_SEL 4  &none          &none         &kp F23  &none  &none    &none  &none  &none  &none  &none
+                            &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2   &bt BT_SEL 3  &kp F22  &none  &none    &none  &none  &none  &none  &none
+                            &none           &trans        &none          &none         &none    &none  &none    &none  &none                &none
                 >;
                 sensor-bindings = <&scroll_up_down>;
             };
         };
     };
 };
+

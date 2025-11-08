@@ -501,10 +501,10 @@
                 // F15:WrapBracketSwitch
                 // F16:WrapQuoteSwitch
                 bindings = <
-                        //  RowL1            RowL2            RowL3                RowL4             RowL5              RowM1                 RowM2         RowR1          RowR2         RowR3            RowR4             RowR5
-                            &kp JP_LT        &kp JP_LBRACE    &kp JP_LBRACKET      &kp JP_LPAREN     &kp JP_HASH                                            &kp JP_AT      &moRParF15    &kp JP_RBRACKET  &kp JP_RBRACE     &kp JP_GT
-                            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS         &kp KP_PLUS       &moEqCal           &none                 &none         &kp JP_UNSCO   &moDquF16     &kp JP_QUOTE     &kp JP_BACKQUOTE  &trans
-                            &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &kp JP_DOLLAR      &none                 &none         &kp JP_YEN     &kp JP_TILDE  &kp JP_EXCL      &kp JP_QUESTION   &kp KP_SLASH
+                        //  RowL1            RowL2            RowL3                RowL4             RowL5              RowM1                 RowM2         RowR1          RowR2          RowR3             RowR4           RowR5
+                            &kp JP_YEN       &kp JP_DOLLAR    &kp JP_AT            &kp JP_HASH       &kp JP_LT                                              &kp JP_AT      &kp JP_QUOTE   &kp JP_LBRACKET  &kp JP_RBRACKET  &kp JP_BACKQUOTE
+                            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS         &kp KP_PLUS       &moEqCal           &none                 &none         &kp JP_UNSCO   &moDquF16      &kp JP_LPAREN    &moRParF15       &trans
+                            &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &kp JP_GT          &none                 &none         &kp JP_YEN     &kp JP_UNSCO   &kp JP_LBRACE    &kp JP_RBRACE    &kp KP_SLASH
                             &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &kp WIN_CMDP  &trans                                                          &kp JP_BSLH
                 >;
                 sensor-bindings = <&scroll_up_down>;

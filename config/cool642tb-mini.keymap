@@ -351,7 +351,7 @@
         Cy_Cz: behavior_sensor_cy_cz {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&kp LC(Y), <&kp LC(Z)>;
+            bindings = <&kp LC(Y)>, <&kp LC(Z)>;
         };
 
         // new behavior

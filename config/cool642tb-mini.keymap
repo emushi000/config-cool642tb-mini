@@ -348,6 +348,12 @@
             bindings = <&kp C_BRI_INC>, <&kp C_BRI_DEC>;
         };
 
+        Cy_Cz: behavior_sensor_cy_cz {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp LC(Y), <&kp LC(Z)>;
+        };
+
         // new behavior
         moL2Colon: mo_layer2_colons {
             compatible = "zmk,behavior-mod-morph";
@@ -402,48 +408,6 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp JP_EQUAL>, <&maSendCal>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        moSCUpF17: mo_scroll_up_F17 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&kp F17>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        moSCDownF18: mo_scroll_down_F18 {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_DOWN>, <&kp F18>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        moSCLeftWLeft: mo_scroll_left_window_left {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&kp LG(LEFT)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        moSCRightWRight: mo_scroll_right_window_right {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&kp LG(RIGHT)>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        moZoomMonLeft: mo_zoom_monitor_left {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&maCScrlUp>, <&kp LG(LS(LEFT))>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        moOutMonRight: mo_out_monitor_right {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&maCScrlDown>, <&kp LG(LS(RIGHT))>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -504,7 +468,7 @@
                             &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &kp JP_GT          &none                 &none         &kp JP_YEN     &kp JP_UNSCO   &kp JP_LBRACE    &kp JP_RBRACE    &kp KP_SLASH
                             &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &kp WIN_CMDP  &trans                                                          &kp JP_BSLH
                 >;
-                sensor-bindings = <&scroll_up_down>;
+                sensor-bindings = <&Cy_Cz>;
             };
 
             layer_3 {

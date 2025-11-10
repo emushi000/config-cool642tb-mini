@@ -58,6 +58,59 @@
 };
 
 / {
+    macros {
+        maCScrlUp: macro_ctrl_scroll_up {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &msc SCRL_UP >
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        maCScrlDown: macro_ctrl_scroll_down {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_press &kp LCTRL>
+                , <&macro_tap &msc SCRL_DOWN >
+                , <&macro_release &kp LCTRL>
+                ;
+        };
+
+        maSendCal: macro_send_cal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp JP_BACKQUOTE &kp C &kp A &kp L>
+                ;
+        };
+
+        maSendNot: macro_send_not {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp JP_EXCL &kp JP_EQUAL>
+                ;
+        };
+
+        maSendLe: macro_send_le {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp JP_LT &kp JP_EQUAL>
+                ;
+        };
+
+        maSendGe: macro_send_ge {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings
+                = <&macro_tap &kp JP_GT &kp JP_EQUAL>
+                ;
+        };
+    };
     behaviors {
         combos {
             compatible = "zmk,combos";
@@ -333,60 +386,6 @@
         };
 
         // new behavior
-        macros {
-            maCScrlUp: macro_ctrl_scroll_up {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LCTRL>
-                , <&macro_tap &msc SCRL_UP >
-                , <&macro_release &kp LCTRL>
-                ;
-            };
-
-            maCScrlDown: macro_ctrl_scroll_down {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_press &kp LCTRL>
-                    , <&macro_tap &msc SCRL_DOWN >
-                    , <&macro_release &kp LCTRL>
-                    ;
-            };
-
-            maSendCal: macro_send_cal {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_tap &kp JP_BACKQUOTE &kp C &kp A &kp L>
-                    ;
-            };
-
-            maSendNot: macro_send_not {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_tap &kp JP_EXCL &kp JP_EQUAL>
-                    ;
-            };
-
-            maSendLe: macro_send_le {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_tap &kp JP_LT &kp JP_EQUAL>
-                    ;
-            };
-
-            maSendGe: macro_send_ge {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings
-                    = <&macro_tap &kp JP_GT &kp JP_EQUAL>
-                    ;
-            };
-        };
-
         moColon: mo_colons {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;

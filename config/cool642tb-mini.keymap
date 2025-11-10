@@ -462,11 +462,11 @@
                 // F15:WrapBracketSwitch
                 // F16:WrapQuoteSwitch
                 bindings = <
-                        //  RowL1            RowL2            RowL3                RowL4             RowL5              RowM1                 RowM2   RowR1            RowR2            RowR3             RowR4            RowR5
-                            &kp JP_YEN       &kp JP_DOLLAR    &kp JP_AT            &kp JP_HASH       &kp JP_LT                                        &kp JP_QUOTE     &moDquF16        &kp JP_UNSCO      &kp JP_TILDE     &kp JP_BACKQUOTE
-                            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS         &kp KP_PLUS       &moEqCal           &none                 &none   &kp JP_EXCL      &kp JP_LPAREN    &kp JP_LBRACKET   &kp JP_RBRACKET     &trans
-                            &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &kp JP_GT          &none                 &none   &kp JP_QUESTION  &kp JP_RBRACKET  &moRParF15        &kp JP_RBRACE    &kp KP_SLASH
-                            &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &trans  &kp WIN_CMDP                                                         &kp JP_BSLH
+                        //  RowL1            RowL2            RowL3                RowL4             RowL5              RowM1                 RowM2   RowR1            RowR2          RowR3            RowR4          RowR5
+                            &kp JP_YEN       &kp JP_DOLLAR    &kp JP_AT            &kp JP_HASH       &kp JP_LT                                        &kp JP_TILDE     &kp JP_UNSCO   &moDquF16        &kp JP_QUOTE   &kp JP_BACKQUOTE
+                            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS         &kp KP_PLUS       &moEqCal           &none                 &none   &kp JP_EXCL      &kp JP_LPAREN  &kp JP_LBRACKET  &kp JP_LBRACE  &trans
+                            &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &kp JP_GT          &none                 &none   &kp JP_QUESTION  &moRParF15     &kp JP_RBRACKET  &kp JP_RBRACE  &kp KP_SLASH
+                            &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &trans  &kp WIN_CMDP                                                    &kp JP_BSLH
                 >;
                 sensor-bindings = <&Cy_Cz>;
             };

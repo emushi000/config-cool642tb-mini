@@ -386,12 +386,13 @@
         };
 
         // new behavior
-        moColon: mo_colons {
+        moL2Colon: mo_layer2_colons {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp JP_COLON>, <&kp SEMI>;
+            bindings = <&lt 2 JP_COLON>, <&kp SEMI>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
 
         moComTil: mo_comma_til {
             compatible = "zmk,behavior-mod-morph";
@@ -480,11 +481,11 @@
                 // moDotEx:1tap=>.(!)
                 // tdMods:1hold=>sift+Ctrl,2hold=>Ctrl+Alt,3hold=>Shift+Alt
                 bindings = <
-                        //  RowL1     RowL2      RowL3     RowL4    RowL5           RowM1             RowM2      RowR1        RowR2    RowR3      RowR4     RowR5
-                            &kp Q     &kp W      &kp E     &kp R    &kp T                                        &kp Y        &kp U    &kp I      &kp O     &kp P
-                            &kp A     &kp S      &kp D     &lt 2 F  &kp G           &msc MB3          &none      &kp H        &lt 2 J  &kp K      &kp L     &moColon
-                            &kp Z     &kp X      &kp C     &kp V    &kp B           &none             &none      &kp N        &kp M    &moComTil  &moDotEx  &lt 3 SLASH
-                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE  &lt 2 F13  &lt 1 ENTER                                &kp JP_BSLH
+                        //  RowL1     RowL2      RowL3     RowL4    RowL5           RowM1             RowM2      RowR1        RowR2   RowR3      RowR4     RowR5
+                            &kp Q     &kp W      &kp E     &kp R    &kp T                                        &kp Y        &kp U   &kp I      &kp O     &kp P
+                            &kp A     &kp S      &kp D     &kp F    &kp G           &msc MB3          &none      &kp H        &kp J   &kp K      &kp L     &moL2Colon
+                            &kp Z     &kp X      &kp C     &kp V    &kp B           &none             &none      &kp N        &kp M   &moComTil  &moDotEx  &lt 3 SLASH
+                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE  &lt 2 F13  &lt 1 ENTER                               &kp JP_BSLH
                 >;
                  sensor-bindings = <&scroll_up_down>;
             };
@@ -507,9 +508,9 @@
                 // F16:WrapQuoteSwitch
                 bindings = <
                         //  RowL1            RowL2            RowL3                RowL4             RowL5              RowM1                 RowM2   RowR1            RowR2          RowR3            RowR4             RowR5
-                            &kp JP_YEN       &kp JP_DOLLAR    &kp JP_AT            &kp JP_HASH       &moLess                                          &kp JP_TILDE     &moDquF16      &kp JP_QUOTE     &kp JP_BACKQUOTE  &none
-                            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS         &kp KP_PLUS       &moEq              &none                 &none   &kp JP_EXCL      &kp JP_LPAREN  &kp JP_LBRACKET  &kp JP_LBRACE     &kp JP_UNSCO
-                            &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &moGreater         &none                 &none   &kp JP_QUESTION  &moRParF15     &kp JP_RBRACKET  &kp JP_RBRACE     &kp KP_MINUS
+                            &kp JP_YEN       &kp JP_DOLLAR    &kp JP_AT            &kp JP_HASH       &moLess                                          &kp JP_TILDE     &moDquF16      &kp JP_QUOTE     &kp JP_BACKQUOTE  &kp JP_EXCL
+                            &kp KP_SLASH     &kp KP_MULTIPLY  &kp KP_MINUS         &kp KP_PLUS       &moEq              &none                 &none   &kp JP_UNSCO     &kp JP_LPAREN  &kp JP_LBRACKET  &kp JP_LBRACE     &trans
+                            &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &moGreater         &none                 &none   &kp KP_MINUS     &moRParF15     &kp JP_RBRACKET  &kp JP_RBRACE     &kp JP_QUESTION
                             &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &trans  &kp WIN_CMDP                                                       &none
                 >;
                 sensor-bindings = <&Cy_Cz>;

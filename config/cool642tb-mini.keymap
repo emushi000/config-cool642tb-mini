@@ -132,7 +132,7 @@
 
         coTab {
             bindings = <&kp TAB>;
-            key-positions = <1 3>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
@@ -224,7 +224,7 @@
 
         coExcl {
             bindings = <&kp JP_EXCL>;
-            key-positions = <1 3>;
+            key-positions = <2 3>;
             layers = <1>;
         };
 

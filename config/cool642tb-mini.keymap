@@ -203,7 +203,7 @@
         mo1: mo1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp N1>, <&kp JP_EQUAL>;
+            bindings = <&kp N1>, <&kp JP_EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

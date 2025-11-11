@@ -212,98 +212,6 @@
             key-positions = <30 32>;
             layers = <0>;
         };
-
-
-        // combos layer1
-        //Left row1
-        coTilde {
-            bindings = <&kp JP_TILDE>;
-            key-positions = <1 2>;
-            layers = <1>;
-        };
-
-        coExcl {
-            bindings = <&kp JP_EXCL>;
-            key-positions = <2 3>;
-            layers = <1>;
-        };
-
-        //Left row2
-        coUnSco {
-            bindings = <&kp JP_UNSCO>;
-            key-positions = <11 12>;
-            layers = <1>;
-        };
-
-        //Left row3
-        coHyphen {
-            bindings = <&kp KP_MINUS>;
-            key-positions = <23 24>;
-            layers = <1>;
-        };
-
-        coQuestion {
-            bindings = <&kp JP_QUESTION>;
-            key-positions = <24 25>;
-            layers = <1>;
-        };
-
-        //Right row1
-        coDQuote {
-            bindings = <&kp JP_DQUOTE>;
-            key-positions = <6 7>;
-            layers = <1>;
-        };
-
-        coQuote {
-            bindings = <&kp JP_QUOTE>;
-            key-positions = <7 8>;
-            layers = <1>;
-        };
-
-        coBQuote {
-            bindings = <&kp JP_BACKQUOTE>;
-            key-positions = <6 8>;
-            layers = <1>;
-        };
-
-        //Right row2
-        coLParen {
-            bindings = <&kp JP_LPAREN>;
-            key-positions = <18 19>;
-            layers = <1>;
-        };
-
-        coLBracket {
-            bindings = <&kp JP_LBRACKET>;
-            key-positions = <19 20>;
-            layers = <1>;
-        };
-
-        coLBrace {
-            bindings = <&kp JP_LBRACE>;
-            key-positions = <18 20>;
-            layers = <1>;
-        };
-
-        //Right row3
-        coRParen {
-            bindings = <&kp JP_RPAREN>;
-            key-positions = <30 31>;
-            layers = <1>;
-        };
-
-        coRBracket {
-            bindings = <&kp JP_RBRACKET>;
-            key-positions = <31 32>;
-            layers = <1>;
-        };
-
-        coRBrace {
-            bindings = <&kp JP_RBRACE>;
-            key-positions = <30 32>;
-            layers = <1>;
-        };
     };
 
 
@@ -589,7 +497,7 @@
                             &kp Q     &kp W      &kp E     &kp R    &kp T                                        &kp Y        &kp U   &kp I      &kp O     &kp P
                             &kp A     &kp S      &kp D     &kp F    &kp G           &msc MB3          &none      &kp H        &kp J   &kp K      &kp L     &moL2Colon
                             &kp Z     &kp X      &kp C     &kp V    &kp B           &mo 2             &none      &kp N        &kp M   &moComTil  &moDotEx  &lt 3 SLASH
-                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE  &kp ENTER  &tdLayers                                 &kp JP_BSLH
+                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE  &kp F13  &tdLayers                                   &kp JP_BSLH
                 >;
                  sensor-bindings = <&scroll_up_down>;
             };
@@ -599,8 +507,8 @@
                 bindings = <
                         //  RowL1            RowL2  RowL3              RowL4    RowL5          RowM1                RowM2          RowR1   RowR2          RowR3      RowR4         RowR5
                             &kp COMMA        &mo7   &mo8               &mo9     &kp LS(LC(N))                                      &none   &moPgTabUp     &kp UP     &moPgTabDown  &kp LC(SPACE)
-                            &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2         &kp C_MUTE           &kp C_PP       &none   &kp LEFT       &kp DOWN   &kp RIGHT     &kp LS(SPACE)
-                            &mo0             &mo1   &mo2               &mo3     &kp F14        &kp C_PREVIOUS       &kp C_NEXT     &none   &kp HOME       &kp K_APP  &kp END       &none
+                            &kp KP_DOT       &mo4   &mo5               &mo6     &kp F2         &kp C_MUTE           &kp C_PP       &none   &kp LEFT       &kp DOWN   &kp RIGHT     &kp ENTER
+                            &mo0             &mo1   &mo2               &mo3     &kp F14        &kp C_PREVIOUS       &kp C_NEXT     &none   &kp HOME       &kp K_APP  &kp END       &kp LS(SPACE)
                             &mt LALT WIN_PS  &none  &mt LGUI WIN_TRIM  &trans   &tdCtrlTdIme   &mt LSHIFT WIN_CLIP  &kp WIN_VOICE  &trans                                          &none
                 >;
                 sensor-bindings = <&volume_up_down>;

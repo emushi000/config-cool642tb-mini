@@ -555,10 +555,17 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
+        tdLayers: tap_dance_layers {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&mo 1>, <&mo 2>;
+        };
+
         tdMods: tap_dance_mods {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <300>;
             bindings = <&kp LS(LCTRL)>, <&kp LC(LALT)>, <&kp LS(LALT)>;
         };
 
@@ -582,7 +589,7 @@
                             &kp Q     &kp W      &kp E     &kp R    &kp T                                        &kp Y        &kp U   &kp I      &kp O     &kp P
                             &kp A     &kp S      &kp D     &kp F    &kp G           &msc MB3          &none      &kp H        &kp J   &kp K      &kp L     &moL2Colon
                             &kp Z     &kp X      &kp C     &kp V    &kp B           &mo 2             &none      &kp N        &kp M   &moComTil  &moDotEx  &lt 3 SLASH
-                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE  &lt 2 F13  &lt 1 ENTER                               &kp JP_BSLH
+                            &kp LALT  &lt 4 F13  &kp LGUI  &tdMods  &mt LCTRL TAB   &mt LSHIFT SPACE  &kp ENTER  &tdLayers                                 &kp JP_BSLH
                 >;
                  sensor-bindings = <&scroll_up_down>;
             };

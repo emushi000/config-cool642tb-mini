@@ -118,101 +118,102 @@
                 ;
         };
     };
-    behaviors {
-        combos {
-            compatible = "zmk,combos";
 
-            //Left row1
-            coEsc {
-                bindings = <&kp ESC>;
-                key-positions = <1 2>;
-                layers = <0>;
-            };
+    combos {
+        compatible = "zmk,combos";
 
-            coShiftTab {
-                bindings = <&kp LS(TAB)>;
-                key-positions = <2 3>;
-                layers = <0>;
-            };
-
-            //Left row2
-            coBs {
-                bindings = <&kp BACKSPACE>;
-                key-positions = <11 12>;
-                layers = <0>;
-            };
-
-            coDel {
-                bindings = <&kp DELETE>;
-                key-positions = <12 13>;
-                layers = <0>;
-            };
-
-            //Left row3
-            coLang1 {
-                bindings = <&kp LANG1>;
-                key-positions = <23 24>;
-                layers = <0>;
-            };
-
-            coLang2 {
-                bindings = <&kp LANG2>;
-                key-positions = <24 25>;
-                layers = <0>;
-            };
-
-            //Right row1
-            coPageUp {
-                bindings = <&moPgTabUp>;
-                key-positions = <6 7>;
-                layers = <0>;
-            };
-
-            coPageDown {
-                bindings = <&moPgTabDown>;
-                key-positions = <7 8>;
-                layers = <0>;
-            };
-
-            //Right row2
-            coMB1 {
-                bindings = <&mkp MB1>;
-                key-positions = <18 19>;
-                layers = <0>;
-            };
-
-            coMB2 {
-                bindings = <&mkp MB2>;
-                key-positions = <18 20>;
-                layers = <0>;
-            };
-
-            coMB3 {
-                bindings = <&mkp MB3>;
-                key-positions = <19 20>;
-                layers = <0>;
-            };
-
-            //Right row3
-            coMB4 {
-                bindings = <&mkp MB4>;
-                key-positions = <30 31>;
-                layers = <0>;
-            };
-
-            coMB5 {
-                bindings = <&mkp MB5>;
-                key-positions = <31 32>;
-                layers = <0>;
-            };
-
-            coMB6 {
-                bindings = <&kp LA(UP)>;
-                key-positions = <30 32>;
-                layers = <0>;
-            };
+        //Left row1
+        coEsc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            layers = <0>;
         };
 
+        coShiftTab {
+            bindings = <&kp LS(TAB)>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        //Left row2
+        coBs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 12>;
+            layers = <0>;
+        };
+
+        coDel {
+            bindings = <&kp DELETE>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        //Left row3
+        coLang1 {
+            bindings = <&kp LANG1>;
+            key-positions = <23 24>;
+            layers = <0>;
+        };
+
+        coLang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <24 25>;
+            layers = <0>;
+        };
+
+        //Right row1
+        coPageUp {
+            bindings = <&moPgTabUp>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        coPageDown {
+            bindings = <&moPgTabDown>;
+            key-positions = <7 8>;
+            layers = <0>;
+        };
+
+        //Right row2
+        coMB1 {
+            bindings = <&mkp MB1>;
+            key-positions = <18 19>;
+            layers = <0>;
+        };
+
+        coMB2 {
+            bindings = <&mkp MB2>;
+            key-positions = <18 20>;
+            layers = <0>;
+        };
+
+        coMB3 {
+            bindings = <&mkp MB3>;
+            key-positions = <19 20>;
+            layers = <0>;
+        };
+
+        //Right row3
+        coMB4 {
+            bindings = <&mkp MB4>;
+            key-positions = <30 31>;
+            layers = <0>;
+        };
+
+        coMB5 {
+            bindings = <&mkp MB5>;
+            key-positions = <31 32>;
+            layers = <0>;
+        };
+
+        coMB6 {
+            bindings = <&kp LA(UP)>;
+            key-positions = <30 32>;
+            layers = <0>;
+        };
+    };
+
+    behaviors {
         mo1: mo1 {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;

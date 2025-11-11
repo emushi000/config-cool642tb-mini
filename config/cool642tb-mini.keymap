@@ -59,6 +59,13 @@
 
 / {
     macros {
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_LAYER_0";
+        };
+
         maCScrlUp: macro_ctrl_scroll_up {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -346,15 +353,6 @@
             bindings = <&kp JP_BSLH>, <&kp JP_UNSCO>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        macros {
-            to_layer_0: to_layer_0 {
-                compatible = "zmk,behavior-macro-one-param";
-                #binding-cells = <1>;
-                bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
-                label = "TO_LAYER_0";
-            };
         };
 
         lt_to_layer_0: lt_to_layer_0 {

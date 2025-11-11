@@ -610,7 +610,7 @@
                             &kp JP_PERCENT   &kp JP_CARET     &kp JP_PIPE          &kp JP_AMPERSAND  &moGreater         &none                 &none   &kp KP_MINUS     &moRParF15     &kp JP_RBRACKET  &kp JP_RBRACE     &kp JP_QUESTION
                             &mt LALT WIN_RS  &none            &mt LGUI WIN_TRIM_R  &trans            &mt LCTRL WIN_TOP  &mt LSHIFT WIN_PASTE  &trans  &kp WIN_CMDP                                                       &none
                 >;
-                sensor-bindings = <&Cy_Cz>;
+                sensor-bindings = <&cyCz>;
             };
 
             layer_3 {

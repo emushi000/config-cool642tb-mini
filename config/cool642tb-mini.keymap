@@ -119,10 +119,10 @@
         };
     };
 
-    // combos layer0
     combos {
         compatible = "zmk,combos";
 
+        // combos layer0
         //Left row1
         coEsc {
             bindings = <&kp ESC>;
@@ -212,10 +212,9 @@
             key-positions = <30 32>;
             layers = <0>;
         };
-    };
 
-    // combos layer1
-    combos {
+
+        // combos layer1
         //Left row1
         coTilde {
             bindings = <&kp JP_TILDE>;
@@ -306,6 +305,7 @@
             layers = <1>;
         };
     };
+
 
     behaviors {
         mo1: mo1 {

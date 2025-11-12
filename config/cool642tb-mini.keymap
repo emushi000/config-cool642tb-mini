@@ -124,8 +124,8 @@
 
         // combos layer0
         //Left row1
-        coShiftTab {
-            bindings = <&kp LS(TAB)>;
+        coEsc {
+            bindings = <&kp ESC>;
             key-positions = <1 2>;
             layers = <0>;
         };
@@ -136,8 +136,8 @@
             layers = <0>;
         };
 
-        coEsc {
-            bindings = <&kp ESC>;
+        coShiftTab {
+            bindings = <&kp LS(TAB)>;
             key-positions = <1 3>;
             layers = <0>;
         };

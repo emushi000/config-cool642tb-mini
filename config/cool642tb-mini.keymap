@@ -465,7 +465,7 @@
         moGreater: mo_greater {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp JP_EQUAL>, <&maSendGe>;
+            bindings = <&kp JP_GT>, <&maSendGe>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 

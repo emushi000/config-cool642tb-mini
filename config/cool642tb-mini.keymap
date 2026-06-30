@@ -566,7 +566,7 @@
                 bindings = <
 &kp F12  &kp F7  &kp F8    &kp F9  &none                                   &none  &kp LG(LS(LEFT))  &kp F17  &kp LG(LS(RIGHT))  &none
 &kp F11  &kp F4  &kp F5    &kp F6  &none      &none                 &none  &none  &kp LG(LEFT)      &kp F18  &kp LG(RIGHT)      &none
-&kp F10  &kp F1  &kp F2    &kp F3  &none      &none                 &none  &none  &kp F19           &kp F20  &kp F21            &trans
+&kp F10  &kp F1  &kp F2    &kp F3  &none      &none                 &none  &none  &kp F22           &kp F23  &kp F24            &trans
 &trans   &none   &kp LGUI  &trans  &kp LCTRL  &mt LSHIFT LG(LS(V))  &none  &none
                 >;
 
